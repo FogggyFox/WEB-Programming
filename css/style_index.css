@@ -4,6 +4,16 @@ h1{
     font-size: 100px;
     margin: 5px;
 }
+h2{
+    font-family: "Courier New" monospace;
+    font-style: oblique;
+    font-size: 50px;
+    margin: 5px;
+    color: #2f0542;
+    text-align: center;
+}
+
+
 
 header{
     margin: 5px;
@@ -15,7 +25,7 @@ header{
 }
 
 body {
-    background-color: #5d0c831a;
+    background-color: #ac0af723;
     margin: 10px;
     border: 1px solid rgba(73, 22, 71, 0.603);
 }
@@ -25,16 +35,29 @@ body {
     margin-left: 0px;
 }
 
+.formul{
+    font-size: 30px;
+    font-family: "Blippo" fantasy;
+    font-weight: 800;
+}
 
 .about {
-    border: 10px solid rgba(80, 34, 80, 0.2);
-
+    filter: drop-shadow(-1px,-1px, 3px, rgb(7, 0, 8));
     -webkit-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
     -moz-box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
     box-shadow: 0px 0px 47px 15px rgba(77, 10, 92, 0.36);
-
+    font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    
+}
+.about i, ul{
+    color: #540579;
+}
+
+.about q{
+    text-decoration: underline;
 }
 
 .photos {
@@ -43,9 +66,24 @@ body {
 }
 
 .photos img {
-    width: 20vw;
+    width: 400px;
+
 }
 pre {
     white-space: pre-wrap;
+}
+
+.links{
+    font-size: 25px;
+}
+.links section{
+    text-align: center;
+    background-image: url(img/10.jpg);
+}
+
+#smile{
+    color: #b9b606;
+    font-size: 15px;
+    position: absolute;
 }
 

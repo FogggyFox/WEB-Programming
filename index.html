@@ -6,13 +6,16 @@
   <meta name="keywords" content="блог, Felix, Ardi, blog">
   <meta name="description" content="Сайт, созданный для новостей о блоге Felix Ardi и для навигации по нему">
   <meta charset="utf-8">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style_index.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
 </Head>
 
 <Body>
   <header>
     <h1>Felix Ardi Blog</h1>
-    <nav>Главная страница, новости, фотогалерея</nav>
+    <nav class="menu"><a href=index.html class="active">Главная страница</a> 
+      <a href=news.html>Новости</a> 
+      <a href= index.html>Фотогалерея</a></nav>
   </header>
   <main>
     <article>
@@ -34,7 +37,7 @@
             <li>Различные кинопроекты</li>
             <li>И многое другое</li>
           </ul>
-          <pre>
+          <pre id="smile">
             ´´´´´´´´´´´´´´´´´´´´1øø777oo77oø$´´´´´´´ 
             ´´´´´´7¢¢o´´´´´´´´ø¶¢´´´´´´´´´´´´ø¶ø´´´´ 
             ´´´´´¶ø7oø¶¶´´´´o¶´´´´´¶¶¶´´´¶¶´´´´´7¶¢´´ 
@@ -79,16 +82,17 @@ ans = linan()
 print(ans[0], ans[1])
                 </code></pre>
             </li>
-            <li>Актер Театра Миниатюр</li>
+            <li>Актер <a href=https://vk.com/minitheater>Театра Миниатюр</a></li>
             <li>Писатель историй и рассказов</li>
             <li>Сценарист и режиссер своих проектов</li>
             <li>Самый гиканутый гик из всех существующих</li>
             <li>Просто веселый жизнерадостный парень</li>
           </ol>
           <p>Как часто спрашивает <cite>Юрий Дудь</cite> - <q>Какова моя формула успеха?</q></p>
-          <p>Я отвечу: (Фантазия<sup>2</sup> + Жизнерадостность - Лень) * Желание</p>
+          <p>Я отвечу: <a class="formul">(Фантазия<sup>2</sup> + Жизнерадостность - Лень) * Желание</a></p>
         </div>
         <aside class="photos">
+          <img src="img/такие.jpg">
           <img src="img/такие.jpg">
           <img src="img/такие.jpg">
           <img src="img/такие.jpg">
@@ -96,32 +100,34 @@ print(ans[0], ans[1])
       </section>
     </article>
   </main>
-  <footer>'
+  <footer class="links">
     <h2>
       Ссылки на мои соцсети
     </h2>
-    <aside>
+    <section>
       <dl>
         <dt>
           Youtube
         </dt>
         <dd>
-          https://www.youtube.com/channel/UCtH5cKjV6ttDvf_FE8RRePg
+          <a href=https://www.youtube.com/channel/UCtH5cKjV6ttDvf_FE8RRePg>
+          Felix Ardi
+          </a>
         </dd>
         <dt>
           VK
         </dt>
         <dd>
-          https://vk.com/chesmon_fox
+          <a href="https://vk.com/chesmon_fox">chesmon_fox</a>
         </dd>
         <dt>
           Insta
         </dt>
         <dd>
-          https://www.instagram.com/self.esteem_guy/
+          <a href="https://www.instagram.com/self.esteem_guy/">self.esteem_guy</a>
         </dd>
       </dl>
-    </aside>
+    </section>
   </footer>
 </Body>
 
