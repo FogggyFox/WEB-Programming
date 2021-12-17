@@ -1,21 +1,3 @@
-.title{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-.title h1{
-    font-family: "Courier New" monospace;
-    font-style: oblique;
-    font-size: 120px;
-    margin: 5px;
-    text-align: right;
-}
-
-.title img {
-    width: 25vw;
-
-}
 h2{
     font-family: "Courier New" monospace;
     font-style: oblique;
@@ -53,8 +35,26 @@ body {
     font-weight: 800;
 }
 
-@media screen and (min-width:1000px){
-
+@media screen and (min-width:1100px){
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .title h1{
+        font-family: "Courier New" monospace;
+        font-style: oblique;
+        font-size: 120px;
+        margin: 5px;
+        text-align: right;
+    }
+    
+    .title img {
+        width: 25vw;
+    
+    }
+    
     .photos {
         display: flex;
         flex-direction: column;
@@ -82,7 +82,25 @@ body {
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    .title h1{
+        font-family: "Courier New" monospace;
+        font-style: oblique;
+        font-size: 10vw;
+        margin: 5px;
+        text-align: right;
+    }
+    
+    .title img {
+        width: 25vw;
+    
+    }
     .photos {
         display: flex;
         flex-direction: row;

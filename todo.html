@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title> Felix Ardi Blog Web-site </Title>
+    <meta name="keywords" content="блог, Felix, Ardi, blog">
+    <meta name="description" content="Сайт, созданный для новостей о блоге Felix Ardi и для навигации по нему">
+    <meta charset="utf-8">
+    <link href="css/style_index.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="js/time.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/table.css">
+    <script src="js/todo.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="title">
+            <img src="img/jj.jpg">
+            <h1>Felix Ardi Blog</h1>
+            </section>
+            <nav class="menu"><a href=index.html>Главная страница</a> 
+              <a href=news.html>Новости</a> 
+              <a href= index.html>Фотогалерея</a>
+              <a href= stories.html>Рассказы и книги</a>
+              <a href= todo.html>Wishlist</a>
+            </nav>
+    </header>
+    <main>
+        <h2 class="naming">
+            Список пожеланий 
+        </h2>
+        <div class="form_div">
+            <form id="form">
+                <p class="part_of_form">
+                    <label for="language">
+                        <span class="label_language">Выберите язык расписания: </span>
+                        <select name="language" id="language" onchange="change_language()">
+                            <option value="rus">Русский</option>
+                            <option value="eng">English</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="part_of_form">
+                    <label for="number">
+                        <span class="number">Количество пожеланий:</span>
+                        <input name="number" id="number" type="number" value="1" min="1">
+                    </label>
+                </p>
+            </form>
+
+            <button id="submit" name="submit" onclick="generate_table();">Создать</button>
+            <button id="save" name="save" onclick="save_params();">Сохранить</button>
+            <button id="clear" name="clear" onclick="clear_all()">Очистить</button>
+        </div>
+        <span>Тип идеи - идея для видео, для рассказа, просто комплимент и т.д.</span>
+        <div class="content">
+            <table class="table">
+                <tr class="header_table">
+                    <th class="typeidea">
+                        Тип идеи
+                    </th>
+                    <th class="idea">
+                        Содержание идеи
+                    </th>
+                    <th class="when">
+                        Желаемое время реализации
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        init()
+    </script>
+</body>
+
+</html>
