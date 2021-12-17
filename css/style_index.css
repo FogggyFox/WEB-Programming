@@ -150,3 +150,7 @@ pre {
 a{
     text-decoration: none !important;
 }
+
+.close{
+    display: none;
+}
