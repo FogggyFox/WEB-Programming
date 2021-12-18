@@ -1,12 +1,11 @@
-(function () {
-    let navs = document.querySelector('.head').querySelector('nav').querySelectorAll('a')
+function menu() {
+    let navs = document.querySelector('header').querySelector('nav').querySelectorAll('a')
     navs.forEach(function(item, i, navs){
-        var text = '/' 
-        if (item.href == document.location.pathname){
+        if (item.href.toString() == document.location.href.toString()){
             const c = item.classList;
             c.toggle('active');
         } 
     }); 
-})();
+};
 
 

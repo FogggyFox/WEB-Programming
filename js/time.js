@@ -6,6 +6,10 @@ let startTime = 0;
 
 window.onload = function () {
     let endTime = (new Date).getTime();
+    if (document.querySelector('footer') == null){
+        var foot = document.createElement("footer");
+        document.querySelector('body').appendChild(foot)
+    }
     let footer = document.querySelector('footer');
     var elem = document.createElement("div");
     var text = document.createTextNode('Время загрузки страницы: ' + (endTime - startTime) + 'ms.');
@@ -14,6 +18,6 @@ window.onload = function () {
 
     document.querySelector('body').addEventListener('click', function () {
         const c = document.querySelector('footer div').classList;
-        c.toggle('close');
+        c.add('close');
     });
 }

@@ -1,0 +1,36 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: "post-1 post-1 post-2"  
+                         "post-1 post-1 post-3"  
+                         "post-6 post-5 post-4"; 
+    grid-template-rows: repeat(3, 170px);
+    grid-template-columns: repeat(3, 300px);
+  }
+  .post-1 {
+    grid-area: post-1;
+    width: 600px;
+  }
+  .post-2 {           
+    grid-area: post-2;
+    width: 300px;
+  }
+  .post-3 {
+    grid-area: post-3;
+    width: 300px;
+  }
+  .post-4 {           
+    grid-area: post-4;
+    width: 300px;
+  }
+  .post-5 {
+    grid-area: post-5;
+    width: 300px;
+  }
+  .post-6 {           
+    grid-area: post-6;
+    width: 300px;
+  }
+  .swiper-container {
+    width: 600px;
+    height: 300px;
+}

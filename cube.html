@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<HTML lang="ru">
+
+<Head>
+    <Title> Felix Ardi Blog Web-site </Title>
+    <meta name="keywords" content="блог, Felix, Ardi, blog">
+    <meta name="description" content="Сайт, созданный для новостей о блоге Felix Ardi и для навигации по нему">
+    <meta charset="utf-8">
+    <link href="css/style_index.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <script src="js/time.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="hystmodal.min.css">
+    <script src="hystmodal.min.js"></script>
+
+</Head>
+
+<Body>
+    <main>
+        <a href=gallery.html>Назад</a>
+        <!-- Slider main container -->
+        <div class="swiper-container" style="padding-bottom: 50px; margin-left: 50px;">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/такие.jpg" width=500px></div>
+                <div class="swiper-slide"><img src="img/jj.jpg" width=500px></div>
+                <div class="swiper-slide"><img src="img/Youtube.png" width=500px></div>
+                <div class="swiper-slide"><img src="img/Youtube.png" width=500px></div>
+                <div class="swiper-slide"><img src="img/Youtube.png" width=500px></div>
+                <div class="swiper-slide"><img src="img/Youtube.png" width=500px></div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            effect: 'cube',
+            width: 500,
+            autoheight: true,
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+</Body>
+
+</HTML>
