@@ -101,8 +101,6 @@ function init() {
     rows = localStorage.getItem("rows");
     lang = localStorage.getItem("lang");
 
-    console.log(rows)
-
     document.getElementById("number").value = rows;
 
     let lang_input = document.getElementById("language");
