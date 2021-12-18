@@ -7,7 +7,7 @@ function change_language() {
     let clear_button = document.querySelector("#clear")
 
     let header_table = get_header_table()
-    let russian_header_table = ["Тип идеи (идея для видео, для рассказа, просто комплимент и т.д.)", "Содержание идеи", "Желаемое время реализации"]
+    let russian_header_table = ["Тип идеи", "Содержание идеи", "Желаемое время реализации"]
     let english_header_table = ["Type of idea", "Idea", "When?"]
 
     let lang = document.getElementById("language").value;
@@ -17,7 +17,7 @@ function change_language() {
             title.innerText = "Список пожеланий"
             label_lang.innerText = "Выберите язык:"
             label_max_num_of_tasks.innerText = "Количество пожеланий:"
-            sbm_button.innerText = "Отправить"
+            sbm_button.innerText = "Принять"
             save_button.innerText = "Сохранить"
             clear_button.innerText = "Очистить"
 
